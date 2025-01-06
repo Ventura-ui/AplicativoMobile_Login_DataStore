@@ -12,6 +12,8 @@ import br.edu.ifsp.dmo.login_datastore.ui.logged.LoggedActivity
 class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: MainViewModel
     private lateinit var binding: ActivityMainBinding
+
+    // O atributo flag é criado e utilizado na função navigateToLoggedActivity, com o intuito de que não seja feita a navegação para o LoggedActivity várias vezes
     private var flag = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
